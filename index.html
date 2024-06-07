@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modelo de Ficha RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="background-color: darkred; border-radius: 10px;">
+        <h1><u>Ficha de RPG</u></h1>
+    </div>
+    <div class="corpo">
+        <div class="primeira">
+            <label class="fonte">Character's name: </label><input type="text" placeholder="nome">
+            <br>
+            <label class="fonte">Race: </label>
+            <select>
+                <option value="none" disabled selected>selecione uma raça</option>
+                <option value="elf">Elfo</option>
+                <option value="human">Humano</option>
+                <option value="orc">Orc</option>
+                <option value="giant">Gigante</option>
+                <option value="shaman">Xamã das feras</option>
+                <option value="demon">Demônio</option>
+                <option value="angel">Anjo (apenas suporte)</option>
+                <option value="dark_demon">Demônio (apenas elemento trevas)</option>
+                <option value="tiefling">Tiefling</option>
+                <option value="half-dragon">Meio-Dragão</option>
+            </select>
+            <br>
+            <label class="fonte">Age: </label><input type="text" placeholder="idade">
+            <br>
+            <label class="fonte">Class: </label>
+            <select>
+                <option value="none" disabled selected>selecione uma classe</option>
+                <option value="mago">Mago</option>
+                <option value="tanque">Tanque</option>
+                <option value="paladino">Paladino</option>
+                <option value="assassino">Assassino</option>
+                <option value="suporte">Suporte</option>
+                <option value="heroi">Herói</option>
+                <option value="feiticeiro">Feiticeiro</option>
+                <option value="atirador">Atirador</option>
+            </select>
+            <input type="text" placeholder="outras/classe composta">
+            <br>
+            <label class="fonte">Lineage: </label>
+            <select>
+                <option value="none" disabled selected>selecione uma linhagem</option>
+                <option value="noble">Nobre</option>
+                <option value="poor">Plebeu</option>
+                <option value="royal">Real (atributo luz apenas)</option>
+            </select>
+            <br>
+            <small>Dependendo da sua linhagem (<a href="/linhagens/nobre.html" target="meu_iframe">nobre</a>, <a href="/linhagens/plebeu.html" target="meu_iframe">plebeu</a>) existem alguns benefícios</small>
+            <iframe src="" name="meu_iframe"></iframe>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <img src="https://game-icons.net/icons/ffffff/000000/1x1/lorc/strong.svg" alt="força" width="50px">
+            <label class="fonte">Strength:</label> <input type="text" size="1">
+            <br>
+            <img src="https://game-icons.net/icons/ffffff/000000/1x1/delapouite/liberty-wing.svg" alt="destreza" width="50px">
+            <label class="fonte">Dexterity:</label> <input type="text" size="1">
+            <br>
+            <img src="https://game-icons.net/icons/ffffff/000000/1x1/sbed/shield.svg" alt="constituição" width="50px">
+            <label class="fonte">Constitution:</label> <input type="text" size="1">
+            <br>
+            <img src="https://game-icons.net/icons/ffffff/000000/1x1/lorc/brain.svg" alt="inteligência" width="50px">
+            <label class="fonte">Intelligence:</label> <input type="text" size="1">
+            <br>
+            <img src="https://game-icons.net/icons/ffffff/000000/1x1/delapouite/wisdom.svg" alt="sabedoria" width="50px">
+            <label class="fonte">Wisdom:</label> <input type="text" size="1">
+            <br>
+            <img src="https://game-icons.net/icons/ffffff/000000/1x1/lorc/dna1.svg" alt="linhagem" width="50px">
+            <label class="fonte">Lineage:</label> 
+            <select>
+                <option value="none" disabled selected>off</option>
+                <option value="on">on</option>
+            </select>
+            <br>
+            <small style="font-size: 15px;"><mark>selecione apenas se for de linhagem nobre ou Real</mark></small>
+            <br>
+            <img src="https://game-icons.net/icons/ffffff/000000/1x1/delapouite/atlas.svg" alt="determinação" width="50px">
+            <label class="fonte">Determination:</label> 
+            <select>
+                <option value="none" disabled selected>off</option>
+                <option value="on">on</option>
+            </select>
+            <br>
+            <small style="font-size: 15px;"><mark>selecione apenas se for de linhagem plebeu</mark></small>
+            <br>
+            <br>
+            <hr>
+            <h2 class="fonte"><u>Itens especiais:</u></h2> 
+            <small><u>Máximo 2</u></small>
+            <br>
+            <textarea placeholder="Descreva itens especiais do personagem EX:Bolsa ilimitado dos anões" cols="45" rows="10"></textarea>
+            <br>
+            <h2><u>Principal Objetivo:</u></h2>
+            <textarea placeholder="Resuma de preferência em poucas palavras EX: vingança,etc" cols="45" rows="5"></textarea>
+        </div>
+        <div class="segunda">
+            <hr>
+            <img class="imagem" src="https://rpgromaduke.weebly.com/uploads/1/2/0/5/12057661/851246527.jpg?369" alt="imagem do personagem">
+            <hr>
+            <br>
+            <textarea style="border-radius: 10px;" placeholder="Escreva a backstory do seu personagem" cols="50" rows="20"></textarea>
+            <h2><u>Habilidades Básicas:</u></h2>
+            <br>
+            <label class="fonteR">Skill 1</label> 
+            <textarea style="font-size: 20px;" cols="28" rows="1" placeholder="nome da skill"></textarea>
+            <br>
+            <br>
+            <label class="fonteR">Descrição</label>
+            <textarea style="font-size: 10px;" cols="28" rows="5" placeholder="descreva"></textarea>
+            <br>
+            <label class="fonteR">Skill 2</label> 
+            <textarea style="font-size: 20px;" cols="28" rows="1" placeholder="nome da skill"></textarea>
+            <br>
+            <br>
+            <label class="fonteR">Descrição</label>
+            <textarea style="font-size: 10px;" cols="28" rows="5" placeholder="descreva"></textarea>
+            <br>
+            <label class="fonteR">Skill 3</label> 
+            <textarea style="font-size: 20px;" cols="28" rows="1" placeholder="nome da skill"></textarea>
+            <br>
+            <br>
+            <label class="fonteR">Descrição</label>
+            <textarea style="font-size: 10px;" cols="28" rows="5" placeholder="descreva"></textarea>
+            <br>
+            <h3 style="color: red;">Atenção !!!!!</h3>
+            <p>Use quando for a hora certa</p>
+            <a href="/charada.html">despertar</a>
+       
